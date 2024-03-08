@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>小菜的个人网站</title>
+  <meta name="keywords" content="个人网站，个人博客，前端，后端" />
+  <meta name="description" content="小菜的创意个人站，学不完的知识！" />
+</head>
+
+<body>
+  <div id="app"></div>
+  <div id="pageloading"></div>
+</body>
+<script type="module" src="/src/main.js">
+  window.__START_DATE__ = Date.now();
+  var _hmt = _hmt || [];
+  (function () {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?83f65ee7a005087c48540a70c405b707";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+<style >
+  html{
+  font-size: 18px;
+  height: 100%;
+}
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: "erikos", "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "WenQuanYi Micro Hei", sans-serif;
+  }
+.black-white {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+.hue-rotate {
+    -webkit-filter: hue-rotate(180deg);
+    filter: hue-rotate(180deg);
+}
+.negative {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}
+  body {
+    background: #4c5ea2;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: "erikos", "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "WenQuanYi Micro Hei", sans-serif;
+  }
+
+  #pageloading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100vw;
+    height: 100vh;
+    transform: scaleX(0);
+    -webkit-transform: scaleX(0);
+    transform-origin: left;
+    -webkit-transform-origin: left;
+    -webkit-transition: -webkit-transform .15s;
+    transition: -webkit-transform .15s;
+    -o-transition: transform .15s;
+    transition: transform .15s;
+    transition: transform .15s, -webkit-transform .15s;
+  }
+
+</style>
+
+</html>

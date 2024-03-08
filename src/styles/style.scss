@@ -1,0 +1,135 @@
+// @import '../components/globalcss/index.scss';
+$red:red;
+$color_main:#ffd03f;
+$b_border:1px solid #111111;
+$color_wathet:#2fd2db;
+$color_pink:#ff98c6;
+$color_violet:#817ef8;
+
+$main_bg:#4456a7;
+$green_bg:#44a75e;
+$red_bg:#a74444;
+$black_bg:#474747;
+$whilte0:rgba(255,255,255,0);
+$whilte1:rgba(255,255,255,1);
+
+$font:"lucida Grande",Verdana;
+$art_font: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+$font_name: "erikos","Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","WenQuanYi Micro Hei",sans-serif;
+// 初始化
+body, figure, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; color:#1a1a1a} 
+body, button, input, select, textarea { font:16px/1.5, "Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","WenQuanYi Micro Hei",sans-serif; } 
+h1, h2, h3, h4, h5, h6{ font-size:100%; } 
+address, cite, dfn, em, var { font-style:normal; } 
+code, kbd, pre, samp { font-family:erikos,couriernew, courier, monospace; } 
+small{ font-size:12px; } 
+ul, ol { list-style:none; } 
+a { text-decoration:none; } 
+a:hover { text-decoration:underline; } 
+sup { vertical-align:text-top; } 
+sub{ vertical-align:text-bottom; } 
+legend { color:#000; } 
+fieldset, img { border:0; } 
+button, input, select, textarea { font-size:100%; } 
+table { border-collapse:collapse; border-spacing:0; }
+a,button{
+  cursor: pointer;
+  border: none;
+}
+span,a,button,li{
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -moz-user-focus: none;
+}
+*:focus { 
+  outline: none
+}
+::selection{background:#000;color:#fff }
+::-moz-selection{background:#000;color:#fff }
+.black-white {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.hue-rotate {
+  -webkit-filter: hue-rotate(180deg);
+  filter: hue-rotate(180deg);
+}
+.negative {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+#app{
+  height: 100vh; 
+}
+@font-face {
+    font-family: 'erikos';
+    src: url('https://rockcelltech.top/images/font/erikos.woff2') format('woff2'),
+         url('https://rockcelltech.top/images/font/erikos.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-size:67.5%;
+}
+@mixin mainBox {
+    width: calc(100vw - 100px);
+    margin: 0 auto;
+    position: relative;
+  }
+.app-center{
+    @include mainBox();
+  }
+
+@media screen and (max-width: 1440px) {
+  html{
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .app-center{
+      width: calc(100vw - 80px);
+  }
+  html{
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .app-center{
+      width: calc(100vw - 60px);
+  }
+}
+@media screen and (max-width: 480px) {
+  .app-center{
+      width: calc(100vw - 20px);
+  }
+  .figure-pop-main{
+    max-width:96vw;
+    max-height: 50vh !important;
+    -webkit-overflow-scrolling: touch;
+  }
+  article.work-pop-main{
+    width: calc(96vw - 32px);
+    height: 70vh;
+    max-height: 70vh;
+    -webkit-overflow-scrolling: touch;
+  }
+  div[class*='figure-style-']{
+    border-radius: .8rem;S
+    &>p{
+      border-radius: .8rem .8rem 0 0
+    }
+  }
+  .main header .times span{
+    display: none
+  }
+  .figure-style-err{
+    max-width:80vw;
+    width: 80vw;
+  }
+}
+@media screen and (max-width: 350px){
+  .figure-flex{
+    figure{
+      margin: 8px;
+    }
+  }
+}
+
